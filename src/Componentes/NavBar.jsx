@@ -5,8 +5,15 @@ import "./NavBar.scss";
 const NavBar = () => {
   const [isScroll, setScroll] = useState(false);
 
+  window.onscroll = () => {
+    setScroll(window.pageYOffset === 0 ? false : true);
+    return () => {
+      window.onscroll = null;
+    };
+  };
+
   return (
-    <div className="navbar">
+    <div className={isScroll ? "navbar scrolled" : "navbar"}>
       <div className="container">
         <div className="left">
           <img
