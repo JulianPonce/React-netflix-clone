@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="home">
       <NavBar />
-      <Caracteristicas />
+      <Caracteristicas type="movies" />
     </div>
   );
 };
