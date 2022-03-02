@@ -9,6 +9,15 @@ export default function Caracteristicas({ type }) {
           <span>{type === "movies" ? "Movies" : "Series"}</span>
           <select name="genero" id="genero">
             <option>Genero</option>
+            <option value="terror">Terror</option>
+            <option value="accion">Accion</option>
+            <option value="comedia">Comedia</option>
+            <option value="drama">Drama</option>
+            <option value="romance">Romance</option>
+            <option value="documental">Documental</option>
+            <option value="sci-fi">Ciencia ficcion</option>
+            <option value="aventura">Aventura</option>
+            <option value="policial">Policial</option>
           </select>
         </div>
       )}

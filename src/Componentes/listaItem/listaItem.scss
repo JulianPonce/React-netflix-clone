@@ -1,0 +1,25 @@
+.listaitem {
+    width: 225px;
+    height: 125px;
+    background-color: var(--main-color);
+    margin-right: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &:hover {
+        width: 325px;
+        height: 300px;
+        top: -150px;
+        position: absolute;
+        -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 13px 3px rgba(255, 255, 255, 0.18);
+        box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 13px 3px rgba(255, 255, 255, 0.18);
+        img {
+            height: 160px;
+        }
+    }
+}
